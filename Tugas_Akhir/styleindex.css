@@ -1,0 +1,238 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #4caf50;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+select, input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+select:focus, input:focus, textarea:focus {
+    border-color: #4caf50;
+    outline: none;
+    box-shadow: 0 0 4px rgba(76, 175, 80, 0.5);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button, .login-button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.02);
+}
+
+.top-right {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.login-button {
+    background-color: #2196f3;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-button:hover {
+    background-color: #1e88e5;
+    transform: scale(1.02);
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+
+.add-stock-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-stock-container h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #4caf50;
+}
+
+.add-stock-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.add-stock-container select,
+.add-stock-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.add-stock-container button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.add-stock-container button:hover {
+    background-color: #45a049;
+}
+
+.add-stock-container .button {
+    display: block;
+    text-align: center;
+    background-color: #2196f3;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.add-stock-container .button:hover {
+    background-color: #1e88e5;
+}
+
+.order-confirmation {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.order-confirmation h1 {
+    color: #4caf50;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.order-confirmation p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #333;
+}
+
+.order-confirmation strong {
+    color: #000;
+}
+
+.order-confirmation a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #2196f3;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.order-confirmation a:hover {
+    background-color: #1e88e5;
+    transform: scale(1.05);
+}
