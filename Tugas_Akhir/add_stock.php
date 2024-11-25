@@ -55,8 +55,8 @@ $plantManager = new PlantManager($conn);
 
 // Cek jika form telah disubmit
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $plant_id = (int) $_POST['plant_id']; // Tipe data integer
-    $additional_stock = (int) $_POST['additional_stock']; // Tipe data integer
+    $plant_id = (int) $_POST['plant_id']; 
+    $additional_stock = (int) $_POST['additional_stock']; 
 
     // Menambah stok tanaman
     if ($plantManager->addPlantStock($plant_id, $additional_stock)) {
